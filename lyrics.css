@@ -1,0 +1,84 @@
+audio {
+  display: none !important;
+}
+
+#cover-photo {
+  height: auto;
+  width:100%;
+}
+
+.albumcover {
+  margin-left: 340px !important;
+  margin-top: 30px !important;
+}
+
+.shrinkit {
+  margin-left: -25px !important;
+  margin-top: 0 !important;
+  transition: all 0.8s ease;
+}
+
+.shrinkit .col-3 {
+  max-width: 35%;
+  transition: all 0.8s ease;
+}
+
+.shrinkit h1 {
+  font-size: 25px;
+  transition: all 0.8s ease;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+.shrinkit h2 {
+  font-size: 20px;
+  transition: all 0.8s ease;
+  margin-top: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+.shrinkit h3 {
+  font-size: 20px;
+  transition: all 0.8s ease;
+  margin-top: 0 !important;
+  margin-bottom: 6px !important;
+}
+
+.shrinkit h4 {
+  font-size: 16px;
+  transition: all 0.8s ease;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.m-t-l {
+  margin-top: 50px;
+}
+
+#lyrics {
+  font-size: 5em;
+  color: #D27497;
+  font-family: 'Nanum Pen Script', cursive;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+  height: 100px;
+
+}
+
+.row {
+  width: 113% !important;
+}
+
+.col-3 {
+  margin-left: -100px;
+  padding-right: 25px;
+}
+
+.shrinkit {
+
+}

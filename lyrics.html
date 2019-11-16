@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Gaegu|Gloria+Hallelujah|Nanum+Pen+Script|Poor+Story|Shadows+Into+Light|Special+Elite|Zilla+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="lyrics.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Caraoke</title>
+  </head>
+  <body>
+    <audio controls autoplay>
+      <source src="i_will_survive.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container m-t-l">
+      <div class="albumcover row">
+        <div class="col-3">
+          <img id="cover-photo" src="gloria_gaynor_album.jpg">
+        </div>
+        <div class="col-9">
+          <h1>Gloria Gaynor</h1>
+          <h2>I Will Survive</h2>
+          <h3>Road Trip Sing-Along Songs</h3>
+          <h4>℗ 2017 UMG Recordings, Inc.</h4>
+        </div>
+      </div>
+    </div>
+
+    <p id="lyrics"></p>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="md5_2.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var k = $('#lyrics');
+
+        setTimeout(function() {
+          $('.albumcover').addClass('shrinkit');
+        }, 4000);
+
+        setTimeout(function() {
+          k.html('At first I was afraid, I was petrified');
+        }, 6000);
+
+        setTimeout(function() {
+          k.html('Kept thinking I could never live without you by my side');
+        }, 9000);
+
+        setTimeout(function() {
+          k.html('But then I spent so many nights thinking how you did me wrong');
+        }, 14000);
+
+        setTimeout(function() {
+          k.html('And I grew strong, and I learned how to get along');
+        }, 18000);
+
+        setTimeout(function() {
+          k.html('And so you\'re back, from outer space');
+        }, 22000);
+
+        setTimeout(function() {
+          k.html('I just walked in to find you here with that sad look upon your face');
+        }, 26000);
+
+        setTimeout(function() {
+          k.html('I should have changed that stupid lock, I should have made you leave your key');
+        }, 30000);
+
+        setTimeout(function() {
+          k.html('If I\'d known for just one second you\'d be back to bother me');
+        }, 34000);
+
+        setTimeout(function() {
+          k.html('Go on now, go, walk out the door');
+        }, 38000);
+
+        setTimeout(function() {
+          k.html('Just turn around now, \'cause you\'re not welcome anymore');
+        }, 42000);
+
+        setTimeout(function() {
+          k.html('Weren\'t you the one who tried to hurt me with goodbye');
+        }, 47000);
+
+        setTimeout(function() {
+          k.html('Do you think I\'d crumble, did you think I\'d lay down and die?');
+        }, 51000);
+
+        setTimeout(function() {
+          k.html('Oh no, not I, I will survive!');
+        }, 55000);
+
+        setTimeout(function() {
+          k.html('Oh, as long as I know how to love, I know I\'ll stay alive');
+        }, 59000);
+
+        setTimeout(function() {
+          k.html('I\'ve got all my life to live, and I\'ve got all my love to give');
+        }, 63000);
+
+        setTimeout(function() {
+          k.html('and I\'ll survive, I will survive!');
+        }, 67000);
+
+        setTimeout(function() {
+          k.html('hey! hey!');
+        }, 71000);
+      });
+    </script>
+  </body>
+</html>

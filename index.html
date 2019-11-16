@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+    <title>Caraoke</title>
+  </head>
+  <body>
+    <div class="container">
+        <form id="content">
+          <input id="song-search" type="text" name="input" class="input" autocomplete="off">
+          <button type="reset" class="search"></button>
+        </form>
+
+
+        <ul class="song-results">
+
+        <ul>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="md5_2.js"></script>
+    <script type="text/javascript">
+
+        //search bar animation
+      function expand() {
+        $(".search").toggleClass("close");
+        $(".input").toggleClass("square");
+        if ($('.search').hasClass('close')) {
+          $('input').focus();
+        } else {
+          $('input').blur();
+        }
+      }
+
+      $('button').on('click', expand);
+
+      function fetchSongs(songTitle) {
+        var apikey = "7d9vkau5knchkpa4z9pkcg7d";
+        var secret = "mmj58xRfZw";
+        var curdate = new Date();
+        var gmtstring = curdate.toGMTString();
+        var utc = Date.parse(gmtstring) / 1000;
+        var roviSig = hex_md5(apikey + secret + utc);
+        var responseData = null;
+
+        $.ajax({
+            url: 'http://api.rovicorp.com/search/v2.1/music/search?entitytype=song&query=I+Will+Survive&rep=1&size=5&offset=0&language=en&country=US&format=json&apikey=7d9vkau5knchkpa4z9pkcg7d&sig=' + roviSig,
+            type: 'GET',
+            crossDomain: true,
+            dataType: 'json',
+            success: function(data) {
+              var responseList = data.searchResponse.results;
+              console.log(data.searchResponse);
+              var songNames = [];
+              var coverLinks = ['4720877', '4583466', '62542238', '20825612', '9384697'];
+              for( let songItem in responseList ) {
+                songNames.push({title: responseList[songItem].song.title, trackId: responseList[songItem].song.ids.trackId});
+              }
+              var resultList = $('ul.song-results');
+              $.each(songNames, function(i)
+              {
+
+                  var li = $('<li/>')
+                      .addClass('song-result-item')
+                      .appendTo(resultList);
+
+                      $.ajax({
+                        url: 'http://api.7digital.com/1.2/track/details?trackId=' + coverLinks[i] + '&shopId=2020&oauth_consumer_key=7d4vr6cgb392&usageTypes=adsupportedstreaming',
+                        type: 'GET',
+                        crossDomain: true,
+                        dataType: 'json',
+                        success: function(imageUrl) {
+                          console.log(imageUrl);
+                          var cover = $('<img/>')
+                          cover.attr('src', imageUrl.track.artist.image);
+                          cover.addClass('coverImages');
+                          cover.appendTo(li);
+                        }
+                      });
+
+                  var aaa = $('<a/>')
+                      .attr('href', './lyrics.html')
+                      .addClass('ui-all')
+                      .text(songNames[i].title)
+                      .appendTo(li);
+
+
+              });
+            },
+            error: function() { console.log('Request Failed!') },
+        });
+      }
+
+      $(document).keypress(function(e) {
+        // e.stopPropagation();
+        if(e.which == 13) {
+            fetchSongs("I Will Survive");
+        }
+      });
+
+    </script>
+  </body>
+</html>
