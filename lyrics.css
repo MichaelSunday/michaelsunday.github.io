@@ -107,6 +107,12 @@ audio {
 
 }
 
+@media only screen and (min-width: 1200px) {
+  #lyrics {
+    left:0;
+  }
+}
+
 .row {
   width: 104% !important;
 }
