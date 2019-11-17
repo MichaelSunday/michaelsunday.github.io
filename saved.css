@@ -3,7 +3,14 @@ audio {
 }
 
 #map {
-  height: 126%;
+  height: 110%;
+}
+
+.middle {
+    vertical-align: middle;
+    text-align:center;
+    position:relative; /*makes left effective*/
+    
 }
 
 /* Recommended Artists  */
