@@ -6,7 +6,76 @@ audio {
   height: 126%;
 }
 
+/* Recommended Artists  */
+.recArtists {
+  margin-left: 40px;
+}
 
+.artist-center {
+  text-align: center;
+}
+
+.artistOne {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.artistOne img {
+  height: auto;
+  width: auto;
+  max-width:100%;
+}
+
+.centeredOne img {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.artistTwo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.artistTwo img {
+  height: auto;
+  width: auto;
+  max-width:100%;
+}
+
+.centeredTwo img {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.artistThree {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.artistThree img {
+  height: auto;
+  width: auto;
+  max-width:100%;
+}
+
+.centeredThree img {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
 
 .container {
   margin-top: 50px;
@@ -86,7 +155,7 @@ audio {
    /*margin-right: auto !important;
    margin-left: auto !important;
    margin-top: 40px !important; */
-   margin: intial !important; 
+   margin: intial !important;
 }
  figure div {
    height: 100%;
