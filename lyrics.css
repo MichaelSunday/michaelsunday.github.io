@@ -15,45 +15,45 @@ audio {
 .shrinkit {
   margin-left: -25px !important;
   margin-top: 0 !important;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 
 .shrinkit .col-3 {
   max-width: 35%;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
 }
 
 .shrinkit h1 {
   font-size: 35px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 12px !important;
 }
 
 .shrinkit h2 {
   font-size: 30px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 12px !important;
 }
 
 .shrinkit h3 {
   font-size: 30px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 6px !important;
 }
 
 .shrinkit h4 {
   font-size: 25px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
 
 .shrinkit h5 {
   font-size: 30px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 12px !important;
   color: #95F26F;
@@ -61,7 +61,7 @@ audio {
 
 .shrinkit h6 {
   font-size: 25px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 12px !important;
   color: #95F26F;
@@ -69,10 +69,14 @@ audio {
 
 .shrinkit p {
   font-size: 17.5px;
-  transition: all 0.8s ease;
+  transition: all 1s ease;
   margin-top: 0 !important;
   margin-bottom: 6px !important;
   color: #95F26F;
+}
+
+.m-t-sm {
+  margin-top: 20px;
 }
 
 .m-t-md {
@@ -148,7 +152,7 @@ audio {
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  height: 18em;
+  height: 17.5em;
   width: auto;
   margin-bottom: 20px;
 }
