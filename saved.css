@@ -98,49 +98,6 @@ audio {
   margin-top: 30px !important;
 }
 
-.shrinkit {
-  margin-left: -25px !important;
-  margin-top: 0 !important;
-  transition: all 0.8s ease;
-}
-
-.shrinkit .col-3 {
-  max-width: 35%;
-  transition: all 0.8s ease;
-}
-
-.shrinkit h1 {
-  font-size: 35px;
-  transition: all 0.8s ease;
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
-}
-
-.shrinkit h2 {
-  font-size: 30px;
-  transition: all 0.8s ease;
-  margin-top: 0 !important;
-  margin-bottom: 12px !important;
-}
-
-.shrinkit h3 {
-  font-size: 30px;
-  transition: all 0.8s ease;
-  margin-top: 0 !important;
-  margin-bottom: 6px !important;
-}
-
-.shrinkit h4 {
-  font-size: 25px;
-  transition: all 0.8s ease;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.m-t-l {
-  margin-top: 50px;
-}
-
 .row {
   width: 113% !important;
 }
@@ -150,50 +107,12 @@ audio {
   padding-right: 25px;
 }
 
-/*BUTTON ANIMATED*/
+#green {
+  color: #95F26F;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
- figure {
-   width: 200px;
-   height: 60px;
-   cursor: pointer;
-   perspective: 500px;
-   -webkit-perspective: 500px;
-   /*margin-right: auto !important;
-   margin-left: auto !important;
-   margin-top: 40px !important; */
-   margin: intial !important;
+.text-center {
+  text-align: center;
 }
- figure div {
-   height: 100%;
-   transform-style: preserve-3d;
-   -webkit-transform-style: preserve-3d;
-   transition: 0.25s;
-   -webkit-transition: 0.25s;
-}
- figure:hover div {
-   transform: rotateX(-90deg);
-}
- span {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   box-sizing: border-box;
-   border: 5px solid #EA5BD8;
-   font-family: 'Source Sans Pro', sans-serif;
-   line-height: 50px;
-   font-size: 17pt;
-   text-align: center;
-   text-transform: uppercase;
-}
- span:nth-child(1) {
-   color: #EA5BD8;
-   transform: translate3d(0, 0, 30px);
-   -webkit-transform: translate3d(0, 0, 30px);
-}
- span:nth-child(2) {
-   color: #3e3428;
-   background: #EA5BD8;
-   transform: rotateX(90deg) translate3d(0, 0, 30px);
-   -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
-}
+
+

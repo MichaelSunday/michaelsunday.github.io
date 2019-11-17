@@ -47,6 +47,7 @@ body {
    font-weight: 600;
    background: #55BFC6;
    padding-left: 60px;
+   font-size: 30px;
 }
  .search-box input:focus {
    outline: none;
@@ -121,7 +122,6 @@ body {
    line-height: 50px;
    font-size: 17pt;
    text-align: center;
-   text-transform: uppercase;
 }
  span:nth-child(1) {
    color: #EA5BD8;
@@ -130,11 +130,19 @@ body {
    -o-transform: translate3d(0, 0, 30px);
 }
  span:nth-child(2) {
-   color: #3e3428;
-   background: #EA5BD8;
+   color: #fff;
+   background: #76F01B;
+   border: 5px solid #76F01B;
    transform: rotateX(90deg) translate3d(0, 0, 30px);
    -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);
    -o-transform: rotateX(90deg) translate3d(0, 0, 30px);
 }
 
+.create-box {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  perspective: 500px;
+  -webkit-perspective: 500px;
+}
  

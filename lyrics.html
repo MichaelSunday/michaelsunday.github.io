@@ -16,49 +16,91 @@
     <title>onTheGo</title>
   </head>
   <body>
+
+<!-- autoplay does NOT work specifically on chrome -->
     <audio autoplay>
       <source src="i_will_survive.mp3" type="audio/mp3" >
     </audio>
 
+    <div class="create-box header-button-location">
+      <a href="saved.html">
+        <p class="green">Saved Artists</p>
+      </a>
+    </div>
+
     <div class="container m-t-l">
       <div class="albumcover row">
+
         <div class="col-3">
           <img id="cover-photo" src="billieEilish.jpg">
+          <figure id="margin-button">
+            <div>
+              <a>
+                <span>Save?</span>
+                <span>Saved!</span>
+              </a>
+            </div>
+          </figure>
         </div>
-        <div class="col-9">
+
+        <div class="col-5">
           <h1>Billie Eilish</h1>
           <h2>My Boy</h2>
           <h3>Don't Smile at Me</h3>
-          <h4>℗ 2017 UMG Recordings, Inc.</h4>
+          <h4>℗ 2019 UMG Recordings, Inc.</h4>
         </div>
+
+        <div class="col-4">
+          <h5 class="big-f">The Forum - Inglewood, CA</h5>
+          <h6 class="med-f">December 6, 2019 @ 7:30PM</h6>
+          <p class="small-f">KIIS FM's Jingle Ball Presented by Capitol One</p>
+        </div>
+
       </div>
     </div>
 
     <p id="lyrics"></p>
+
+    <h1 class="text-center green m-t-l">Related Artist in the Area</h1>
+    <div class="container m-t-md">
+      <div class="row">
+        <div class="col-sm">
+          <div class="middle">
+            <h4>Clairo</h4>
+            <img src="clairo.jpg">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="middle">
+            <h4>Halsey</h4>
+            <img src="halsey.png">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="middle">
+            <h4>Khalid</h4>
+            <img src="khalid.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script type="text/javascript" src="md5_2.js"></script>
     <script type="text/javascript">
-      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-  else{
-     $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background 
-  }
 
       $(function() {
         var k = $('#lyrics');
 
         setTimeout(function() {
           $('.albumcover').addClass('shrinkit');
-        }, 4000);
+        }, 2500);
 
         setTimeout(function() {
           k.html('My boys being sus, he was shady enough,');
-        }, 6000);
+        }, 4500);
 
         setTimeout(function() {
           k.html('but now hes just a shadow');
